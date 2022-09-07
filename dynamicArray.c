@@ -13,6 +13,7 @@ int main()
     array.insertString(&array, "abobora");
     array.insertInt(&array, 22);
     array.insertChar(&array, 't');
+    array.insertDouble(&array, 4.23);
     array.insertString(&array, "brennon");
 
     array.pop(&array);

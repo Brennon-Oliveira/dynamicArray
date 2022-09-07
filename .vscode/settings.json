@@ -12,6 +12,7 @@
         "type_traits": "c",
         "utility": "c",
         "stdlib.h": "c",
-        "arraystructs.h": "c"
+        "arraystructs.h": "c",
+        "inserts.h": "c"
     }
 }
