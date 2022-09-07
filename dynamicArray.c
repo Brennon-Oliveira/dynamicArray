@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "Array.h"
-#include Class struct
 
 void teste(int test){
     printf("%d\n", test);
@@ -11,7 +10,7 @@ void teste(int test){
 
 int main()
 {
-    // Array array;
+    Array array;
     int i;
 
     initArray(&array, 5);
@@ -25,8 +24,6 @@ int main()
     arrayInserString(&array, "brennon");
 
     popArray(&array);
-
-    arrayForEach(&array, )
 
     printArray(&array);
 
