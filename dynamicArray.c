@@ -5,7 +5,7 @@ int main()
     Array array;
     int i;
 
-    initArray(&array, 5);
+    initArray(&array);
 
     array.insertInt(&array, 41);
     array.insertChar(&array, 'c');

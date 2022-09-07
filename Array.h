@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
+#define INITIAL_ARRAY_SIZE 5
 
 #include "ArrayStructs.h"
 
@@ -10,9 +11,9 @@
 
 // init
 
-void initArray(Array *array, int initializeSize){
-    array->arr = malloc(initializeSize * sizeof(struct content));
-    array->size = initializeSize;
+void initArray(Array *array){
+    array->arr = malloc(INITIAL_ARRAY_SIZE * sizeof(struct content));
+    array->size = INITIAL_ARRAY_SIZE;
     array->used = 0;
     // Inserts
     array->insert = &arrayInsert;
