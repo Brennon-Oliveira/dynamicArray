@@ -1,12 +1,4 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
-#include <stdbool.h>
 #include "Array.h"
-
-void teste(int test){
-    printf("%d\n", test);
-}
 
 int main()
 {
@@ -15,19 +7,19 @@ int main()
 
     initArray(&array, 5);
 
-    arrayInsertInt(&array, 41);
-    arrayInsertChar(&array, 'c');
-    arrayInserString(&array, "teste");
-    arrayInserString(&array, "abobora");
-    arrayInsertInt(&array, 22);
-    arrayInsertChar(&array, 't');
-    arrayInserString(&array, "brennon");
+    array.insertInt(&array, 41);
+    array.insertChar(&array, 'c');
+    array.insertString(&array, "teste");
+    array.insertString(&array, "abobora");
+    array.insertInt(&array, 22);
+    array.insertChar(&array, 't');
+    array.insertString(&array, "brennon");
 
-    popArray(&array);
+    array.pop(&array);
 
-    printArray(&array);
+    array.printAll(&array);
 
-    freeArray(&array);
+    array.free(&array);
     return 0;
 }
 
